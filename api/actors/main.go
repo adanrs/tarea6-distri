@@ -24,7 +24,7 @@ var items []Actors
 var jsonData string = `[
 	{
 		"_id": 1,
-		"Actors": "John Wiley & Sons",
+		"Actors": "Chris Pratt, Vin Diesel, Bradley Cooper, Zoe Saldana",
 		"movies": [
 			{
 				"movie_id": 1,
