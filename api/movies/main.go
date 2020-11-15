@@ -11,7 +11,7 @@ import (
 type Movie struct {
 	Id          int    `json:"_id"`
 	Title       string `json:"title"`
-	Year        string `json:"year"`
+	Year        int    `json:"year"`
 	Description string `json:"description"`
 	Genre       int    `json:"genre"`
 	Language    string `json:"language"`
