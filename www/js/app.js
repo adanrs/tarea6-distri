@@ -43,11 +43,11 @@ function init() {
 		'/actors': function() {
 			getAll('actors');
 		},
-		'/directors': function() {
-			getAll('directors');
+		'/director': function() {
+			getAll('director');
 		},
 		'/directorById': function(_, query) {
-			getById(query, 'directors');
+			getById(query, 'director');
 		},
 		'/actorsById': function(_, query) {
 			getById(query, 'actors');

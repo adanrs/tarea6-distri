@@ -35,7 +35,7 @@ var jsonData string = `[
 	},
 	{
 		"_id": 2,
-"Director": "Ridley Scott",
+"director": "Ridley Scott",
 
 		"movies": [
 			{
@@ -46,7 +46,7 @@ var jsonData string = `[
 	},
 	{
 		"_id": 3,
-		"Director": "M. Night Shyamalan",
+		"director": "M. Night Shyamalan",
 	"movies": [
 		{
 			"movie_id": 3,
