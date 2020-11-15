@@ -63,9 +63,9 @@ var jsonData string = `[
 ]`
 
 func FindMovie(id int) *Movie {
-	for _, book := range movies {
-		if book.Id == id {
-			return &book
+	for _, movie := range movies {
+		if movie.Id == id {
+			return &movie
 		}
 	}
 	return nil
@@ -79,9 +79,9 @@ func handler(req events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse
 	} else {
 		param, err := strconv.Atoi(id)
 		if err == nil {
-			book := FindMovie(param)
-			if book != nil {
-				data, _ = json.Marshal(*book)
+			movie := FindMovie(param)
+			if movie != nil {
+				data, _ = json.Marshal(*movie)
 			} else {
 				data = []byte("error\n")
 			}

@@ -43,13 +43,13 @@ function init() {
 		'/actors': function() {
 			getAll('actors');
 		},
-		'/director': function() {
-			getAll('director');
+		'/directors': function() {
+			getAll('directors');
 		},
 		'/directorById': function(_, query) {
-			getById(query, 'director');
+			getById(query, 'directors');
 		},
-		'/actorsById': function(_, query) {
+		'/actorById': function(_, query) {
 			getById(query, 'actors');
 		},
 		'/movieById': function(_, query) {
