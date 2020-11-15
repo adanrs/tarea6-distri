@@ -56,7 +56,7 @@ var jsonData string = `[
 		"language": "ENGLISH",
 		"Director": "M. Night Shyamalan",
 		"Actors": "James McAvoy, Anya Taylor-Joy, Haley Lu Richardson, Jessica Sula",
-			"Director_id": 3,
+		"Director_id": 3,
 		"Actors_id": 3,
 		"Year": 2016
 	}
