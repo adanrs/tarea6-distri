@@ -50,7 +50,7 @@ var jsonData string = `[
 	}
 ]`
 
-func FindBook(id int) *Movie {
+func FindMovie(id int) *Movie {
 	for _, book := range movies {
 		if book.Id == id {
 			return &book
@@ -67,7 +67,7 @@ func handler(req events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse
 	} else {
 		param, err := strconv.Atoi(id)
 		if err == nil {
-			book := FindBook(param)
+			book := FindMovie(param)
 			if book != nil {
 				data, _ = json.Marshal(*book)
 			} else {

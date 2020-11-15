@@ -2,65 +2,39 @@ package main
 
 import (
 	"encoding/json"
+	"strconv"
+
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
-	"strconv"
 )
 
-type BookRef struct {
-	BookId int    `json:"book_id"`
-	Title  string `json:"title"`
+type MovieRef struct {
+	MovieId int    `json:"movie_id"`
+	Title   string `json:"title"`
 }
 
-type Publisher struct {
-	Id        int       `json:"_id"`
-	Publisher string    `json:"publisher"`
-	Country   string    `json:"country"`
-	Founded   int       `json:"founded"`
-	Genere    string    `json:"genere"`
-	Books     []BookRef `json:"books"`
+type Actors struct {
+	Id     int        `json:"_id"`
+	Actors string     `json:"actors"`
+	Movies []MovieRef `json:"movies"`
 }
 
-var items []Publisher
+var items []Actors
 
 var jsonData string = `[
 	{
 		"_id": 1,
-		"publisher": "John Wiley & Sons",
-		"country": "United States",
-		"founded": 1807,
-		"genere": "Academic",
-		"books": [
+		"Actors": "John Wiley & Sons",
+		"movies": [
 			{
-				"book_id": 1,
-				"title": "Operating System Concepts"
-			},
-			{
-				"book_id": 2,
-				"title": "Database System Concepts"
-			}
-		]
-	},
-	{
-		"_id": 2,
-		"publisher": "Pearson Education",
-		"country": "United Kingdom",
-		"founded": 1844,
-		"genere": "Education",
-		"books": [
-			{
-				"book_id": 3,
-				"title": "Computer Networks"
-			},
-			{
-				"book_id": 4,
-				"title": "Modern Operating Systems"
+				"movie_id": 1,
+				"title": "Guardians of the Galaxy"
 			}
 		]
 	}
 ]`
 
-func FindItem(id int) *Publisher {
+func FindItem(id int) *Actors {
 	for _, item := range items {
 		if item.Id == id {
 			return &item

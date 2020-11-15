@@ -37,26 +37,20 @@ function home() {
 function init() {
 	router = new Navigo(null, false, '#!');
 	router.on({
-		'/books': function() {
-			getAll('books');
-		},
-		'/authors': function() {
-			getAll('authors');
-		},
-		'/publishers': function() {
-			getAll('publishers');
-		},
 		'/movies': function() {
 			getAll('movies');
 		},
-		'/bookById': function(_, query) {
-			getById(query, 'books');
+		'/actors': function() {
+			getAll('actors');
 		},
-		'/authorById': function(_, query) {
-			getById(query, 'authors');
+		'/directors': function() {
+			getAll('directors');
 		},
-		'/publisherById': function(_, query) {
-			getById(query, 'publishers');
+		'/directorById': function(_, query) {
+			getById(query, 'directors');
+		},
+		'/actorById': function(_, query) {
+			getById(query, 'actors');
 		},
 		'/movieById': function(_, query) {
 			getById(query, 'movies');
