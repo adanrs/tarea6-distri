@@ -5,7 +5,7 @@
   functions = "/functions"
 
 [build.environment]
-  GO_IMPORT_PATH = "github.com/arce/faas"
+  GO_IMPORT_PATH = "github.com/adanrs/tarea6-distri"
   GO111MODULE = "on"
 
 [[redirects]]

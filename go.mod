@@ -1,4 +1,4 @@
-module github.com/arce/faas
+module github.com/adanrs/tarea6-distri
 
 go 1.13
 
