@@ -49,7 +49,7 @@ function init() {
 		'/directorById': function(_, query) {
 			getById(query, 'directors');
 		},
-		'/actorById': function(_, query) {
+		'/actorsById': function(_, query) {
 			getById(query, 'actors');
 		},
 		'/movieById': function(_, query) {
