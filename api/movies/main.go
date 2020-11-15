@@ -47,6 +47,20 @@ var jsonData string = `[
 		"language": "ENGLISH",
 		"Director_id": 2,
 		"Actors_id": 2
+	},
+	{
+		"_id": 3,
+		"title": "Split",
+		"Genre": "Horror,Thriller",
+		"Description": "Three girls are kidnapped by a man with a diagnosed 23 distinct personalities. They must try to escape before the apparent emergence of a frightful new 24th.",
+		"Director": "M. Night Shyamalan",
+		"Actors": "James McAvoy, Anya Taylor-Joy, Haley Lu Richardson, Jessica Sula",
+		"Year": 2016,
+
+		"language": "ENGLISH"
+		,
+		"Director_id": 3,
+			"Actors_id": 3
 	}
 ]`
 
