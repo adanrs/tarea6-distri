@@ -7,14 +7,14 @@
        <input class="u-full-width" type="text" id="_id" value="{{ _id }}" readonly/>
     </div>
     <div class="six columns">
-       <label for="copyrightInput">Copyright</label>
-       <input class="u-full-width" type="text" id="copyright" value="{{ copyright }}" readonly/>
+       <label for="yearInput">Year</label>
+       <input class="u-full-width" type="text" id="year" value="{{ year }}" readonly/>
     </div>
   </div>
   <div class="row">
     <div class="six columns">
-       <label for="editionInput">Edition</label>
-       <input class="u-full-width" type="text" id="edition" value="{{edition }}" readonly/>
+       <label for="editionInput">Description</label>
+       <input class="u-full-width" type="text" id="description" value="{{description }}" readonly/>
     </div>
     <div class="six columns">
        <label for="languageInput">Language</label>
@@ -24,14 +24,14 @@
   <div class="row">
     <div class="six columns">
        <label for=" authorInput">Author</label>
-       <a href="/authorById/?id={{ author_id }}">
-         <input class="u-full-width" type="button" id=" author" value="{{ author }}" readonly/>
+       <a href="/directorById/?id={{ director_id }}">
+         <input class="u-full-width" type="button" id=" director" value="{{ director }}" readonly/>
        </a>
     </div>
     <div class="six columns">
        <label for="languageInput">Publisher</label>
-       <a href="/publisherById/?id={{ publisher_id }}">
-         <input class="u-full-width" type="button" id="publisher" value="{{ publisher }}" readonly/>
+       <a href="/actorById/?id={{ actor_id }}">
+         <input class="u-full-width" type="button" id="actor" value="{{ actor }}" readonly/>
        </a>
     </div>
   </div>
