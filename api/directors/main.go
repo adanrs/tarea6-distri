@@ -13,14 +13,14 @@ type MovieRef struct {
 	Title   string `json:"title"`
 }
 
-type Director struct {
+type Directors struct {
 	Id       int    `json:"_id"`
 	Director string `json:"director"`
 
 	Movie []MovieRef `json:"movies"`
 }
 
-var items []Director
+var items []Directors
 
 var jsonData string = `[
 	{
@@ -56,7 +56,7 @@ var jsonData string = `[
 	}
 ]`
 
-func FindItem(id int) *Director {
+func FindItem(id int) *Directors {
 	for _, item := range items {
 		if item.Id == id {
 			return &item
