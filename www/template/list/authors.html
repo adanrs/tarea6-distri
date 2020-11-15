@@ -1,0 +1,8 @@
+<h3 style="margin-top: 15px">Authors Information</h3>
+This section presents information about the authors of books
+<p>
+<ul>
+  {{#.}}
+    <li><a href='/authorById/?id={{ _id }}'> {{ author }}</a></li>
+  {{/.}}
+</ul>

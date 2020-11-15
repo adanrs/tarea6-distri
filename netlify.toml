@@ -1,0 +1,22 @@
+[build]
+  base = "/"
+  command = "make build"
+	publish = "/www"
+  functions = "/functions"
+
+[build.environment]
+  GO_IMPORT_PATH = "github.com/arce/faas"
+  GO111MODULE = "on"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+	
+[[redirects]]
+  from = "/*"
+  to = "/www/index.html"
+  status = 200
+
+[redirects.headers]
+  Access-Control-Allow-Origin = "*"

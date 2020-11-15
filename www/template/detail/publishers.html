@@ -1,0 +1,32 @@
+<h4 style="margin-top: 15px">{{ publisher }}</h4>
+
+<h5>Publisher's details</h5>
+<form>
+  <div class="row">
+    <div class="six columns">
+       <label for="idInput">ID</label>
+       <input class="u-full-width" id="_id" type="text" value="{{ _id }}" readonly/>
+    </div>
+    <div class="six columns">
+       <label for="countryInput">Country</label>
+       <input class="u-full-width" id="country" type="text" value="{{ country }}" readonly/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+       <label for="foundedInput">Founded</label>
+       <input class="u-full-width" id="founded" type="text" value="{{ founded }}"  readonly/>
+    </div>
+    <div class="six columns">
+       <label for="genereInput">Genere</label>
+       <input class="u-full-width" id="genere" type="text" value="{{ genere }}"  readonly/>
+    </div>
+  </div>
+</form>
+
+<h5>Books</h5>
+<ul>
+{{#books}}
+  <li><a href="/bookById/?id={{book_id}}">{{title}}</li>
+{{/books}}
+</ul>

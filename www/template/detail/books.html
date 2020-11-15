@@ -1,0 +1,38 @@
+<h4 style="margin-top: 15px">{{ title }}</h4>
+<h5>Book's details</h5>
+<form>
+  <div class="row">
+    <div class="six columns">
+       <label for="idInput">ID</label>
+       <input class="u-full-width" type="text" id="_id" value="{{ _id }}" readonly/>
+    </div>
+    <div class="six columns">
+       <label for="copyrightInput">Copyright</label>
+       <input class="u-full-width" type="text" id="copyright" value="{{ copyright }}" readonly/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+       <label for="editionInput">Edition</label>
+       <input class="u-full-width" type="text" id="edition" value="{{edition }}" readonly/>
+    </div>
+    <div class="six columns">
+       <label for="languageInput">Language</label>
+       <input class="u-full-width" type="text" id="language" value="{{ language }}" readonly/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+       <label for=" authorInput">Author</label>
+       <a href="/authorById/?id={{ author_id }}">
+         <input class="u-full-width" type="button" id=" author" value="{{ author }}" readonly/>
+       </a>
+    </div>
+    <div class="six columns">
+       <label for="languageInput">Publisher</label>
+       <a href="/publisherById/?id={{ publisher_id }}">
+         <input class="u-full-width" type="button" id="publisher" value="{{ publisher }}" readonly/>
+       </a>
+    </div>
+  </div>
+</form>
