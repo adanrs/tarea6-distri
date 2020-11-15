@@ -1,0 +1,8 @@
+<h3 style="margin-top: 15px">Movies Information</h3>
+This section presents information about Directors
+<p>
+<ul>
+  {{#.}}
+    <li><a href='/directorsById/?id={{ _id }}'> {{ directors }}</a></li>
+  {{/.}}
+</ul>
