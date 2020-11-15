@@ -48,7 +48,7 @@ var jsonData string = `[
 	"movies": [
 		{
 			"movie_id": 3,
-			"title": ""Split","
+			"title": "Split"
 		}
 	]
 	}

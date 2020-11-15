@@ -41,26 +41,24 @@ var jsonData string = `[
 		"title": "Prometheus",
 		"Genre": "Adventure,Mystery,Sci-Fi",
 		"Description": "Following clues to the origin of mankind, a team finds a structure on a distant moon, but they soon realize they are not alone.",
+		"language": "ENGLISH",
 		"Director": "Ridley Scott",
 		"Actors": "Noomi Rapace, Logan Marshall-Green, Michael Fassbender, Charlize Theron",
-		"Year": 2012,
-		"language": "ENGLISH",
 		"Director_id": 2,
-		"Actors_id": 2
+		"Actors_id": 2,
+		"Year": 2012
 	},
 	{
 		"_id": 3,
 		"title": "Split",
 		"Genre": "Horror,Thriller",
 		"Description": "Three girls are kidnapped by a man with a diagnosed 23 distinct personalities. They must try to escape before the apparent emergence of a frightful new 24th.",
+		"language": "ENGLISH",
 		"Director": "M. Night Shyamalan",
 		"Actors": "James McAvoy, Anya Taylor-Joy, Haley Lu Richardson, Jessica Sula",
-		"Year": 2016,
-
-		"language": "ENGLISH"
-		,
-		"Director_id": 3,
-			"Actors_id": 3
+			"Director_id": 3,
+		"Actors_id": 3,
+		"Year": 2016
 	}
 ]`
 
