@@ -46,6 +46,9 @@ function init() {
 		'/publishers': function() {
 			getAll('publishers');
 		},
+		'/movies': function() {
+			getAll('movies');
+		},
 		'/bookById': function(_, query) {
 			getById(query, 'books');
 		},
@@ -54,7 +57,10 @@ function init() {
 		},
 		'/publisherById': function(_, query) {
 			getById(query, 'publishers');
-		}
+		},
+		'/movieById': function(_, query) {
+			getById(query, 'movies');
+		},
 	});
 	router.on(() => home());
 	router.resolve();
