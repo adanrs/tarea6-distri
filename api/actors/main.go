@@ -31,26 +31,6 @@ var jsonData string = `[
 				"title": "Guardians of the Galaxy"
 			}
 		]
-	},
-	{		"_id": 2,
-	
-			"Actors": "Noomi Rapace, Logan Marshall-Green, Michael Fassbender, Charlize Theron",
-			"movies": [
-				{
-					"movie_id": 2,
-					"title": "Prometheus"
-				}
-			]
-	},
-	{
-		"_id": 3,
-	"Actors": "James McAvoy, Anya Taylor-Joy, Haley Lu Richardson, Jessica Sula",
-	"movies": [
-		{
-			"movie_id": 3,
-			"title": ""Split","
-		}
-	]
 	}
 ]`
 
