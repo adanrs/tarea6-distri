@@ -8,25 +8,16 @@
        <input class="u-full-width" id="_id" type="text" value="{{ _id }}" readonly/>
     </div>
     <div class="six columns">
-       <label for="nationalityInput">Nationality</label>
-       <input class="u-full-width" id="nationality" type="text" value="{{ nationality }}" readonly/>
+       <label for="nationalityInput">Actors</label>
+       <input class="u-full-width" id="actors" type="text" value="{{ actors }}" readonly/>
     </div>
   </div>
-  <div class="row">
-    <div class="six columns">
-       <label for="birthInput">Birth Year</label>
-       <input class="u-full-width" id="birth_year" type="text" value="{{ birth_year }}"  readonly/>
-    </div>
-    <div class="six columns">
-       <label for="fieldsInput">Fields</label>
-       <input class="u-full-width" id="fields" type="text" value="{{ fields  }}"  readonly/>
-    </div>
-  </div>
+
 </form>
 
-<h5>Books</h5>
+<h5>Movies</h5>
 <ul>
-{{#books}}
+{{#movies}}
   <li><a href="/movieById/?id={{movie_id}}">{{title}}</li>
-{{/books}}
+{{/movies}}
 </ul>
