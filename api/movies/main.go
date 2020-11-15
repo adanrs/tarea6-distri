@@ -35,6 +35,18 @@ var jsonData string = `[
 		"Director_id": 1,
 		"Actors_id": 1,
 		"Year": 2014	
+	},
+	{
+		"_id": 2,
+		"title": "Prometheus",
+		"Genre": "Adventure,Mystery,Sci-Fi",
+		"Description": "Following clues to the origin of mankind, a team finds a structure on a distant moon, but they soon realize they are not alone.",
+		"Director": "Ridley Scott",
+		"Actors": "Noomi Rapace, Logan Marshall-Green, Michael Fassbender, Charlize Theron",
+		"Year": 2012,
+		"language": "ENGLISH",
+		"Director_id": 2,
+		"Actors_id": 2
 	}
 ]`
 
