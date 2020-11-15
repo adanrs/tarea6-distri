@@ -17,7 +17,7 @@ type Director struct {
 	Id       int    `json:"_id"`
 	Director string `json:"director"`
 
-	Books []MovieRef `json:"books"`
+	Movie []MovieRef `json:"movies"`
 }
 
 var items []Director
